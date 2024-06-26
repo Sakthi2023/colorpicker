@@ -1,9 +1,12 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const color = "#ffffff";
+  const [color, setColor] = useState("#ffffff");
 
-  const handleColorChange = (event) => {};
+  const handleColorChange = (event) => {
+    setColor(event.target.value);
+  };
 
   return (
     <div style={{ padding: "20px" }}>
